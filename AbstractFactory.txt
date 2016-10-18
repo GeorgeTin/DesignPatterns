@@ -1,0 +1,19 @@
+Lucreaza cu o clasa super-factory care creeaza alte factories. La randul lor acestea din urma creeaza obiecte si familii
+de obiecte. 
+
+Avem o clasa abstracta ale carei metode returneaza obiect de tipul unei familii (interfata). In functie de parametrii 
+trimisi metodei, tipul obiectului instantiat difera. Se ascunde astfel de client implementarea din spate.
+Clientul acceseaza obiectele printr-o interfata. 
+
+Obs: 
+	- ConcreteFactory ar trebui sa fie implementat ca singleton, din moment ce avem nevoie doar de o instanta a obiectului per familie de produse.
+	- Acest DesignPattern face codul usor de testat (DI) si extensibil.
+	- Multiple implementari.
+La ce ajuta:
+
+
+
+Cand trebuie sa folosim:
+	- aplicatia este independenta de modul in care sunt create obiectele
+	- sistemul lucreaza identic cu mai multe tipuri de produse provenind din aceeasi familie
+	-  
